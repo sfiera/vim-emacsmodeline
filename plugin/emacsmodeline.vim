@@ -58,6 +58,8 @@ function! <SID>SetVimModeOption(modeline)
             let value = g:emacsModeDict[value]
         endif
         exec 'setlocal filetype=' . value
+    elseif a:modeline =~ '^ *C++ *$'
+        exec 'setlocal filetype=cpp'
     endif
 endfunc
 
