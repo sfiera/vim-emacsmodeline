@@ -6,7 +6,7 @@
 " Date: Dec 23, 2010
 " Maintainer: Chris Pickel <sfiera@gmail.com>
 "
-" Installation: put this file under your ~/.vim/plugins/
+" Installation: put this file under your ~/.vim/plugin/
 "
 " Usage:
 "
