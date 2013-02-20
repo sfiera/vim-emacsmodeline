@@ -2,8 +2,8 @@
 "
 " emacsmodeline.vim
 " Brief: Parse emacs mode line and setlocal in vim
-" Version: 0.1
-" Date: Dec 23, 2010
+" Version: 1.1
+" Date: Feb 20, 2013
 " Maintainer: Chris Pickel <sfiera@gmail.com>
 "
 " Installation: put this file under your ~/.vim/plugin/
@@ -23,6 +23,8 @@
 " 1.0, Dec 23, 2010:
 "  * Support for mode, fill-column, buffer-read-only, and indent-tabs-mode.
 "  * Maintainership taken up by Chris Pickel <sfiera@gmail.com>.
+" 1.1, Feb 20, 2013
+"  * Prevent an exploit.  Not seen in the wild, but likely to be used by vengeful emacs users.
 "
 
 " No attempt is made to support vim versions before 7.0.
