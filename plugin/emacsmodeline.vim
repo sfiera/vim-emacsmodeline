@@ -55,7 +55,7 @@ function! <SID>FindParameterValue(modeline, emacs_name, value)
 endfunc
 
 function! <SID>SetVimModeOption(modeline)
-    let value = <SID>FindParameterValue(a:modeline, 'mode', '\S\+')
+    let value = <SID>FindParameterValue(a:modeline, 'mode', '[A-Za-z_+-]\+')
     if strlen(value)
         let value = tolower(value)
         if (has_key(g:emacsModeDict, value))
