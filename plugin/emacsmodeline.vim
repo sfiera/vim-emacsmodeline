@@ -30,6 +30,10 @@ if version < 700
     finish
 endif
 
+if (!exists("g:emacs_modelines"))
+    let g:emacs_modelines=5
+endif
+
 if (!exists('g:emacsModeDict'))
     let g:emacsModeDict = {}
 endif
@@ -80,15 +84,10 @@ function! <SID>SetVimToggleOption(modeline, emacs_name, vim_name, nil_value)
 endfunc
 
 function! ParseEmacsModeLine()
-    " If &modeline is false, then don't try to detect modelines.
-    if ! &modeline
-        return
-    endif
-
-    " Prepare to scan the first and last &modelines lines.
+    " Prepare to scan the first and last g:emacs_modelines lines.
     let max = line("$")
-    if max > (&modelines * 2)
-        let lines = range(1, &modelines) + range(max - &modelines + 1, max)
+    if max > (g:emacs_modelines * 2)
+        let lines = range(1, g:emacs_modelines) + range(max - g:emacs_modelines + 1, max)
     else
         let lines = range(1, max)
     endif
