@@ -40,12 +40,18 @@ if (!exists('g:emacsModeDict'))
     let g:emacsModeDict = {}
 endif
 
+" Note: Entries to emacsModeDict must be lowercase. E. g. 'makefile' instead of 'Makefile'.
+
 if (!has_key(g:emacsModeDict, 'c++'))
     let g:emacsModeDict['c++'] = 'cpp'
 endif
 
 if (!has_key(g:emacsModeDict, 'shell-script'))
     let g:emacsModeDict['shell-script'] = 'sh'
+endif
+
+if (!has_key(g:emacsModeDict, 'makefile'))
+    let g:emacsModeDict['makefile'] = 'make'
 endif
 
 function! <SID>FindParameterValue(modeline, emacs_name, value)
