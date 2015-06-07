@@ -2,8 +2,8 @@
 "
 " emacsmodeline.vim
 " Brief: Parse emacs mode line and setlocal in vim
-" Version: 1.1
-" Date: Feb 20, 2013
+" Version: 1.2
+" Date: Jun 07, 2015
 " Maintainer: Chris Pickel <sfiera@gmail.com>
 "
 " Installation: put this file under your ~/.vim/plugin/
@@ -14,7 +14,7 @@
 " -*- tab-width: 4 -*-
 "
 " Which is the same meaning as:
-" vim:shiftwidth=4:softtabstob=4:tabstop=4:
+" vim:tabstop=4:
 "
 " Revisions:
 "
@@ -25,6 +25,8 @@
 "  * Maintainership taken up by Chris Pickel <sfiera@gmail.com>.
 " 1.1, Feb 20, 2013
 "  * Prevent an exploit.  Not seen in the wild, but likely to be used by vengeful emacs users.
+" 1.2, Jun 07, 2015:
+"  * More file support.  Let vim provide defaults.
 "
 
 " No attempt is made to support vim versions before 7.0.
