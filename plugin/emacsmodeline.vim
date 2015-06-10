@@ -85,7 +85,7 @@ function! <SID>SetVimNumberOption(modeline, emacs_name, vim_name)
 endfunc
 
 function! <SID>SetVimToggleOption(modeline, emacs_name, vim_name, nil_value)
-    let value = <SID>FindParameterValue(a:modeline, a:emacs_name, '\S\+')
+    let value = <SID>FindParameterValue(a:modeline, a:emacs_name, '[^; \t]\+')
     if strlen(value)
         if (value == 'nil') == a:nil_value
             exec 'setlocal ' . a:vim_name
