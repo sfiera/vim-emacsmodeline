@@ -43,6 +43,7 @@ let s:emacsModeDictDefault = {
     \ 'c++':          'cpp',
     \ 'shell-script': 'sh',
     \ 'makefile':     'make',
+    \ 'js':           'javascript',
 \ }
 
 if (!exists('g:emacsModeDict'))
