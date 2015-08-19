@@ -44,6 +44,7 @@ let s:emacsModeDictDefault = {
     \ 'shell-script': 'sh',
     \ 'makefile':     'make',
     \ 'js':           'javascript',
+    \ 'protobuf':     'proto',
 \ }
 
 if (!exists('g:emacsModeDict'))
